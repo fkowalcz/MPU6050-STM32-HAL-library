@@ -1,0 +1,9 @@
+STM32L476RGTX_RAM.ld
+STM32L476RGTX_FLASH.ld
+MPU6050-v2 Debug.launch
+Debug/
+.project
+.mxproject
+.cproject
+.settings/
+
