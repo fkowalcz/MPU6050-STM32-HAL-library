@@ -8,7 +8,7 @@ To use this library, simply add the provided files to your STM32 project and inc
 ``` c
 #include "stm32l4xx_hal.h"
 ```
-in [MPU6050.h](/home/fryderyk/MPU6050/mpu6050/MPU6050/Core/Inc/MPU6050.h)  to HAL version matching your microcontroller.
+in [MPU6050.h](/MPU6050/mpu6050/MPU6050/Core/Inc/MPU6050.h)  to HAL version matching your microcontroller.
 
 
 ## Usage
