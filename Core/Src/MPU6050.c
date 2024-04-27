@@ -110,11 +110,11 @@ void Comp_Filter_Results(MPU6050_t *Results){
     
     //     explanation in /Datasheets/MPU-6050-math.pdf
 
-	float pitch_tmp = Results->Accel_Pitch * COMPLEMENTARY_ALPHA + (1-COMPLEMENTARY_ALPHA) * Results->Gyro_Pitch;
+	float pitch_tmp = Results->Gyro_Pitch * COMPLEMENTARY_ALPHA + (1-COMPLEMENTARY_ALPHA) * Results->Accel_Pitch;
 	Results->Accel_Pitch = pitch_tmp;
 	Results->Gyro_Pitch = pitch_tmp;
 
-	float roll_tmp = Results->Accel_Roll * COMPLEMENTARY_ALPHA + (1-COMPLEMENTARY_ALPHA) * Results->Gyro_Roll;
+	float roll_tmp = Results->Gyro_Roll * COMPLEMENTARY_ALPHA + (1-COMPLEMENTARY_ALPHA) * Results->Accel_Roll;
 	Results->Accel_Roll = roll_tmp;
 	Results->Gyro_Roll = roll_tmp;
 
